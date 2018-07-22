@@ -1,0 +1,9 @@
+<div class="d-none d-lg-block d-xl-block">
+<div class="row">
+  {% for client in include.clients %}
+    <div class="col-sm-2 mb-3">
+        <img src="{{ client.image_url }}" class="img-fluid">
+    </div>
+  {% endfor %}
+</div>
+</div>

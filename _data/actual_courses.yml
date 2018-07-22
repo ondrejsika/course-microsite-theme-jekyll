@@ -1,0 +1,21 @@
+- data:
+    - Course
+    - Location (Language)
+    - Date
+    - Price
+    - ''
+  meta:
+    head: true
+- data:
+    - Docker, Compose, Swarm
+    - Prague, EN
+    - 1.-2.1.2018
+    - from 5000 CZK
+    - <a class="btn btn-outline-primary btn-sm" href="#">Register for training</a>
+- data:
+    - Docker, Compose, Swarm
+    - Prague, EN
+    - 1.-2.1.2018
+    - from 5000 CZK
+    - <a class="btn btn-outline-primary btn-sm" href="#">Register for training</a>
+

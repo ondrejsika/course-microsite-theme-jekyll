@@ -1,0 +1,15 @@
+<div class="table-responsive-sm">
+<table class="table ">
+    {% for row in include.table %}
+    <tr>
+        {% for col in row.data %}
+            {% if row.meta.head %}
+                <th>{{ col }}</th>
+            {% else %}
+                <td>{{ col }}</td>
+            {% endif %}
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+</div>

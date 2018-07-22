@@ -1,0 +1,22 @@
+<div class="card-deck">
+{% for recommendation in include.recommendations %}
+<div class="card box-shadow">
+  <div class="card-body">
+      <p>
+        {{ recommendation.text }}
+      </p>
+    <div class="row">
+      <div class="col-sm-4">
+          <img src="{{ recommendation.image_url }}" class="img-fluid">
+      </div>
+      <div class="col-sm-8">
+          <h3>{{ recommendation.name }}</h3>
+          <p>{{ recommendation.role }}
+          <br><strong>{{ recommendation.company }}</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
