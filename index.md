@@ -106,3 +106,7 @@ Jmenuji se Ondrej Sika, pracuji jako software engineer na Slush Poolu (tezba Bit
 {% include col-2.html col1=about_me_col1 col1cls='col-sm-9' col2=about_me_col2 col2cls='col-sm-3' %}
 {% endcapture %}
 {% include section.html content=about_me %}
+
+
+{% include sticky-footer.html button1href='/' button1text='Register for training' button2href='/' button2text='Contact me' %}
+

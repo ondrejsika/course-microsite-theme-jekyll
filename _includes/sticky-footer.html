@@ -1,0 +1,13 @@
+<div class="navbar fixed-bottom bg-white border-top box-shadow">
+    <div class="container">
+        {% if include.button1href %}
+            <a class="btn btn-outline-primary mr-3" href="{{ include.button1href }}">{{ include.button1text }}</a>
+        {% endif %}
+        {% if include.button2href %}
+            <a class="btn btn-outline-primary mr-3" href="{{ include.button2href }}">{{ include.button2text }}</a>
+        {% endif %}
+        {% if include.button3href %}
+            <a class="btn btn-outline-primary mr-3" href="{{ include.button3href }}">{{ include.button3text }}</a>
+        {% endif %}
+    </div>
+</div>
