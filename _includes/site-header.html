@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-sm-9 mt-4">
+        {{ include.body | markdownify }}
+        <a class="btn btn-outline-primary" href="button1href">{{ include.button1text }}</a>
+        <a class="btn btn-outline-primary" href="button2href">{{ include.button2text }}</a>
+</div>
+<div class="col-sm-3 mt-3">
+<div class="d-none d-lg-block d-xl-block">
+    <img src="{{ include.logo_url }}" class="img-fluid">
+</div>
+</div>
+</div>

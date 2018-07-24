@@ -2,8 +2,20 @@
 layout: default
 ---
 
+{% capture site_header %}
+{% capture site_header_body %}
+## Docker Training
+
+by [__Ondrej Sika__](https://ondrej-sika.com)
+{% endcapture %}
+{% include site-header.html body=site_header_body button1href='/' button1text='Register for training' button2href='/' button2text='Contact me' logo_url='/d.png' %}
+{% endcapture %}
+{% include section.html content=site_header %}
+
+
+
 {% capture actual_courses %}
-## Actual courses
+## Actual Courses
 
 {% include table.html table=site.data.actual_courses %}
 {% endcapture %}
@@ -48,6 +60,8 @@ Docker is container platfor which provide strictly defined and separated envirom
 ## Pricing
 
 {% include pricing.html plans=site.data.pricing %}
+
+Students, Universities and non-profit organisations have 50% discount.
 {% endcapture %}
 {% include section.html content=pricing %}
 
