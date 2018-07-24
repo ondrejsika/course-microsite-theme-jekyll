@@ -1,0 +1,15 @@
+- name: Self funded
+  price: 4 000 CZK
+  text: per person
+  button: Order
+  link: '#'
+- name: Company funded
+  price: 6 000 CZK
+  text: per person
+  button: Order
+  link: '#'
+- name: Company (On Site)
+  price: 15 000 CZK
+  text: per team
+  button: Order
+  link: '#'

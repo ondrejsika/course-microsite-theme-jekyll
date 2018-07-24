@@ -1,0 +1,14 @@
+<div class="card-deck text-center">
+    {% for plan in include.plans %}
+<div class="card mb-4 box-shadow">
+  <div class="card-header">
+      <h4 class="my-0 font-weight-normal">{{ plan.name }}</h4>
+  </div>
+  <div class="card-body">
+      <h3 class="card-title pricing-card-title">{{ plan.price }}</h3>
+      <p>{{ plan.text }}</p>
+      <a href="{{ plan.link }}" class="btn btn-lg btn-block btn-outline-primary">{{ plan.button }}</a>
+  </div>
+</div>
+  {% endfor %}
+</div>

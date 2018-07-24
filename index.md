@@ -42,3 +42,53 @@ Docker is container platfor which provide strictly defined and separated envirom
 - Basic usage in CI (Continues Itegration)
 {% endcapture %}
 {% include section.html content=agenda %}
+
+
+{% capture pricing %}
+## Pricing
+
+{% include pricing.html plans=site.data.pricing %}
+{% endcapture %}
+{% include section.html content=pricing %}
+
+
+
+{% capture contact_col1 %}
+### Ondrej Sika
+<ondrej@ondrejsika.com>
+<br>+420 773 452 376
+
+##### Katerina Lipovska (Assistant)
+<katerina@sikahq.coma>
+{% endcapture %}
+
+{% capture contact_col2 %}
+<ul>
+<li><a href="https://www.facebook.com/sikaondrej">Facebook</a></li>
+<li><a href="https://twitter.com/ondrejsika">Twitter</a></li>
+<li><a href="https://github.com/ondrejsika">Github</a></li>
+<li><a href="https://www.linkedin.com/in/ondrejsika/">Linkedin</a></li>
+<li><a href="https://navolnenoze.cz/prezentace/ondrej-sika/">Na Volne Noze</a></li>
+</ul>
+{% endcapture %}
+
+{% capture clients %}
+## Contact me
+{% include col-2.html col1=contact_col1 col2=contact_col2 %}
+{% endcapture %}
+{% include section.html content=clients %}
+
+
+{% capture about_me_col1 %}
+Jmenuji se Ondrej Sika, pracuji jako software engineer na Slush Poolu (tezba Bitcoinu) a vyvojem software se zabyvam od roku 2009. Od roku 2013 skolim. Vsechny moje kurzy stavi na mych dlouholetych znalostech a zkusenostech z vyvoje, testovani a provozovani softwatrovych projektu od malych webu po velke globalni projekty. Nastroje jako Git, Docker nebo CI pouzivam na denni bazi, vse co skolim jsem pouzil v realnych projektech a mam s technologii osobni zkusenost. Vsechny kurzy jsem schopen upravit na miru vasim pozadavkum a vsechny probihaji formou workshopu – verim ze si neco zkusit je ta nejefektivnejsi cesta se neco naucit. Zaroven jsem otevren spolupraci jako externi lektor, pokud jste skolici firma a hledate nekoho kdo vam bude skolit temata jako Git, Docker, CI … (vlastne cokoliv co nabizim), tak se urcite domluvime. Vice infomaci naleznete zde: Lektorska Spoluprace. Vsechny kurzy a skoleni delam v ceskem nebo anglickem jazyce. Rad fotim a pisi blog o technologiich, cestovani a knihach.
+{% endcapture %}
+
+{% capture about_me_col2 %}
+<img src="/ondrejsika3-300x300.jpg" class="img-fluid">
+{% endcapture %}
+
+{% capture about_me %}
+## About me
+{% include col-2.html col1=about_me_col1 col1cls='col-sm-9' col2=about_me_col2 col2cls='col-sm-3' %}
+{% endcapture %}
+{% include section.html content=about_me %}
